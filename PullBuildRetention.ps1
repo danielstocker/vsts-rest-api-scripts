@@ -1,10 +1,10 @@
-﻿## WHAT DOES THIS SCRIPT DO? ###################################################################
-# It iterates through all the projects and all their build definitions in a given VSTS account #
-# and configures a given retention policy. In this example I have hard-coded a retention policy#
-# for all pull request builds, but this can easily be customised to meet different needs.      #
-# This script is based on a question I got around configuring pull request retention policies  # 
-# across an account (VSTS) or collection (TFS).                                                #
-################################################################################################
+﻿## WHAT DOES THIS SCRIPT DO? ####################################################################
+# It iterates through all the projects and all their build definitions in a given VSTS account  #
+# and configures a given retention policy. In this example I have hard-coded a retention policy #
+# for all pull request builds, but this can easily be customised to meet different needs.       #
+# This script is based on a question I got around configuring pull request retention policies   # 
+# across an account (VSTS) or collection (TFS).                                                 #
+#################################################################################################
 
 $personalAccessToken = "<your personal access token>"
 $base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f "",$personalAccessToken)))
